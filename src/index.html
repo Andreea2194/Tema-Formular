@@ -10,28 +10,28 @@
     <h2>Implementare</h2>
     <form>
       <!-- Implementează formularul așa cum îl vezi în <aside> -->
-        <p>
-          Nume
-          <input type="text" value="" placeholder="Cum te cheama" name="name" />
-        </p>
-        <p>
-          Email
-          <input type="email" value="" placeholder="user@domain.ext" name="email-address" />
-        </p>
-        <p>
-          Mesaj
-        <textarea placeholder="Scrie-ne ceva"></textarea>
-        </p>
+        <div class="label">
+        <label for="name">Nume</label>
+        <input type="text" value="" placeholder="Cum te cheama" name="name" required />
+        </div>
+        <div class="label">
+        <label for-="email">Email</label>
+        <input type="email" value="" placeholder="user@domain.ext" name="email-address" />
+        </div>
+        <div class="label">
+        <label for="message"> Mesaj</label>
+        <textarea id="message" placeholder="Scrie-ne ceva" rows="4"></textarea>
+        </div>
         <label>
-            <p class="checkbox-group">
-          <input type="checkbox" value="tos" />
-          Citesc mereu Termenii si Conditiile
-            </p>
-        </label>
-        <p class="btn-group">
+          <div class="checkbox-group">
+          <input type="checkbox" value="tos" id="checkbox" />
+          <label for="checkbox">Citesc mereu Termenii si Conditiile</label>
+          </div>
+          <br />
+        <div class="btn-group">
           <button type="reset">Reseteaza formular</button>
           <button type="submit">Trimite</button>
-        </p>
+        </div>
     </form>
   </main>
   <aside>
